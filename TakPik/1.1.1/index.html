@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mis seade - Takistuspiiksir - Piuksu</title>
+<link rel="icon" href="piuksu.w3spaces.com/logo2.png">
+<meta charset="UTF-8">
+<meta name="keywords" content="Piuksu">
+<meta name="msvalidate.01" content="5873E6FE494095968218AA1BA927405A" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="TakPik, takistuspiiksir, piuksu, parim, mäng, online mäng">
+<meta name="description" content="TakPik ehk takistuspiiksir on piuksu tootetud mäng!">
+<meta name="author" content="Rasmus Luure (Äitah w3schools-ile (https://www.w3schools.com/) ja stackoverflow-le (https://stackoverflow.com/))">
+<style> 
+body {background-color: yellow;}
+#main {
+  width: 100%;
+  display: flex;
+  background-color: orange;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#main:hover {
+  background-color: #FFb500;
+}
+h1 {text-align: center; font-family: arial;}
+#main div {
+  -ms-flex: 1;  /* IE 10 */  
+  flex: 1;
+}
+@media only screen and (max-width: 1000px) {
+  #main {
+    display: block;
+  }
+  img {width: 100%;}
+}
+img {
+ width: 50%;
+}
+</style>
+</head>
+<body>
+<h1>Alustamiseks valige oma seade:</h1>
+<div id="main" onclick="document.getElementById('tt').click();">
+  <div><h1>Telefon või tahvelarvuti</h1></div>
+<img src="https://takistuspiiksir.w3spaces.com/tt.png">
+</div>
+<br>
+<div id="main" onclick="document.getElementById('sala').click();">
+  <div><h1>Lauaarvuti või sülervuti</h1></div>
+<img src="https://takistuspiiksir.w3spaces.com/sala.png">
+</div>
+<a href="tt.html" id="tt"></a><a href="sala.html" id="sala"></a>
+<iframe style="display: none;" src="https://1100.ee/piuksu/tpt.php?l=TakPik"></iframe>
+</body>
+</html>
